@@ -31,7 +31,7 @@ def slow_down(i):
         #sleep(0.1)                          #sleep for 100m second
 
 def right(i):
-    #pin_right()
+    pin_right()
     print("right")
     print(i)
     for x in range (i):
@@ -40,10 +40,24 @@ def right(i):
         #sleep(0.1)
 
 def left(i):
-    #pin_left()
+    pin_left()
     print("left")
     print(i)
     for x in range (i):
         pin.p1.ChangeDutyCycle(x)
         pin.p2.ChangeDutyCycle(i-x)
         #sleep(0.1)
+
+def pin_left():
+    print('L')
+    pin.set('d1','on')
+    pin.set('d2','off')
+    pin.set('d3', 'off')
+    pin.set('d4','on')
+
+def pin_right():
+    print('R')
+    pin.set('d1','off')
+    pin.set('d2','on')
+    pin.set('d3', 'on')
+    pin.set('d4','off')
