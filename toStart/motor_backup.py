@@ -35,7 +35,7 @@ def right(i):
     print("right")
     print(i)
     for x in range (i):
-        pin.p1.ChangeDutyCycle(x)
+        pin.p1.ChangeDutyCycle(i-x)
         pin.p2.ChangeDutyCycle(x)
         #sleep(0.1)
 
@@ -45,7 +45,7 @@ def left(i):
     print(i)
     for x in range (i):
         pin.p1.ChangeDutyCycle(x)
-        pin.p2.ChangeDutyCycle(x)
+        pin.p2.ChangeDutyCycle(i-x)
         #sleep(0.1)
 
 def pin_left():

@@ -1,9 +1,9 @@
 import RPi.GPIO as GPIO
 
-pins = [{'pin_num': 9, 'name': 'd1'},#f
-        {'pin_num': 8, 'name': 'd2'},#b
-        {'pin_num': 7, 'name': 'd4'},#f
-        {'pin_num': 1, 'name': 'd3'}]#b
+pins = [{'pin_num': 9, 'name': 'd1'},
+        {'pin_num': 8, 'name': 'd2'},
+        {'pin_num': 7, 'name': 'd3'},
+        {'pin_num': 1, 'name': 'd4'}]
 
 GPIO.setmode(GPIO.BCM)  # use GPIO numbering, not generic
 GPIO.setwarnings(False)
