@@ -2,8 +2,13 @@ import RPi.GPIO as GPIO
 
 pins = [{'pin_num': 9, 'name': 'd1'},
         {'pin_num': 8, 'name': 'd2'},
+<<<<<<< HEAD
         {'pin_num': 7, 'name': 'd4'},
         {'pin_num': 1, 'name': 'd3'}]
+=======
+        {'pin_num': 7, 'name': 'd3'},
+        {'pin_num': 1, 'name': 'd4'}]
+>>>>>>> 73c2119c277d9f84f90cac97b713c2da78f5f088
 
 GPIO.setmode(GPIO.BCM)  # use GPIO numbering, not generic
 GPIO.setwarnings(False)
