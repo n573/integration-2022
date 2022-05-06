@@ -46,10 +46,10 @@ def main():
             ux = curr[1] - prev[1]#pi
             uy = curr[2] - prev[2]#pi
 
-            ang1 = math.acos(ux/math.sqrt(math.pow(ux,2) + math.pow(uy,2)))
-            ang2 = math.acos(vx/math.sqrt(math.pow(vx,2) + math.pow(vy,2)))
-            ang = ang2-ang1
-            print(ang)
+            #ang1 = math.acos(ux/math.sqrt(math.pow(ux,2) + math.pow(uy,2)))
+            #ang2 = math.acos(vx/math.sqrt(math.pow(vx,2) + math.pow(vy,2)))
+            #ang = ang2-ang1
+            #print(ang)
 
             print('destination reached?')
             print(destination)
