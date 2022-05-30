@@ -1,10 +1,3 @@
-#Example Servo Code
-#Control the angle of a 
-#Servo Motor with Raspberry Pi
-
-# free for use without warranty
-# www.learnrobotics.org
-
 import RPi.GPIO as GPIO
 from time import sleep
 
@@ -48,5 +41,6 @@ while count < numLoops:
     
     count=count+1
 
-pwm.stop()
+pwm1.stop()
+pwm2.stop()
 GPIO.cleanup()
