@@ -10,6 +10,7 @@ from time import sleep
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
+GPIO.setup(19, GPIO.OUT)
 
 pwm1=GPIO.PWM(18, 50)
 pwm1.start(0)
