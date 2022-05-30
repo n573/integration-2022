@@ -11,16 +11,22 @@ from time import sleep
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
 
-pwm=GPIO.PWM(18, 50)
-pwm.start(0)
+pwm1=GPIO.PWM(18, 50)
+pwm1.start(0)
+pwm2=GPIO.PWM(19, 50)
+pwm2.start(0)
 
 def setAngle(angle):
     duty = angle / 18 + 2
     GPIO.output(18, True)
-    pwm.ChangeDutyCycle(duty)
+    pwm1.ChangeDutyCycle(duty)
+    GPIO.output(19, True)
+    pwm2.ChangeDutyCycle(duty)
     sleep(1)
     GPIO.output(18, False)
-    pwm.ChangeDutyCycle(duty)
+    pwm1.ChangeDutyCycle(duty)
+    GPIO.output(19, False)
+    pwm2.ChangeDutyCycle(duty)
 
 count = 0
 numLoops = 2
