@@ -2,6 +2,7 @@ from bluedot import BlueDot
 import motor as mot
 from time import sleep
 from signal import pause
+#import grab
 bd = BlueDot()
 
 def dpad(pos):
@@ -23,5 +24,5 @@ def dpad(pos):
         mot.pin.coast()
         #sleep(1)
 bd.when_moved = dpad
-#bd.when_pressed = mot.pin.coast()
+#bd.when_pressed = grab
 pause()
